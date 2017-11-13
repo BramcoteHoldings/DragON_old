@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" CreateVersion="4.2" version="4.2" modules="freeware" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install &lt;product name&gt;." ValueLocId="*"/>
+    <ROW Property="BannerBitmap" Value="default_banner.bmp" Type="1"/>
+    <ROW Property="DialogBitmap" Value="default_dialog.bmp" Type="1"/>
+    <ROW Property="Manufacturer" Value="BHL Axiom" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{2800C9FF-5544-467D-9D71-A41CDF221188} "/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="SaveDocToDB" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{77BF8282-3F26-4448-B509-CD20E90246A4}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR" IsPseudoRoot="1"/>
+    <ROW Directory="CVS_DIR" Directory_Parent="APPDIR" DefaultDir="CVS"/>
+    <ROW Directory="DISK1_DIR" Directory_Parent="DiskImages_DIR" DefaultDir="DISK1"/>
+    <ROW Directory="DiskImages_DIR" Directory_Parent="SingleImage_DIR" DefaultDir="DiskIm~1|DiskImages"/>
+    <ROW Directory="Express_DIR" Directory_Parent="SaveDocToDB_DIR" DefaultDir="Express"/>
+    <ROW Directory="Interm_DIR" Directory_Parent="Express_DIR" DefaultDir="Interm"/>
+    <ROW Directory="LogFiles_DIR" Directory_Parent="SingleImage_DIR" DefaultDir="LogFiles"/>
+    <ROW Directory="Reports_DIR" Directory_Parent="SingleImage_DIR" DefaultDir="Reports"/>
+    <ROW Directory="SaveDocToDB_DIR" Directory_Parent="APPDIR" DefaultDir="SaveDo~1|SaveDocToDB"/>
+    <ROW Directory="SingleImage_DIR" Directory_Parent="Express_DIR" DefaultDir="Single~1|SingleImage"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Entries" ComponentId="{1C394A9E-2392-4155-A6D0-F9C9F2E6C14C}" Directory_="CVS_DIR" Attributes="0" KeyPath="Entries" FullKeyPath="APPDIR\CVS"/>
+    <ROW Component="IsIcoRes.Exe" ComponentId="{8AAC5722-DBD0-4463-ADE4-507DF3894BC5}" Directory_="Interm_DIR" Attributes="0" KeyPath="IsIcoRes.Exe" FullKeyPath="APPDIR\SaveDocToDB\Express\Interm\_IsIcoRes.Exe"/>
+    <ROW Component="PM.htm" ComponentId="{9B67957D-FB52-44E9-94D9-59BA09E11383}" Directory_="Reports_DIR" Attributes="0" KeyPath="PM.htm" FullKeyPath="APPDIR\SaveDocToDB\Express\SingleImage\Reports"/>
+    <ROW Component="PM.txt" ComponentId="{B309253C-0732-4519-A794-05F55E21BB0E}" Directory_="LogFiles_DIR" Attributes="0" KeyPath="PM.txt" FullKeyPath="APPDIR\SaveDocToDB\Express\SingleImage\LogFiles"/>
+    <ROW Component="SaveDocToDB.dll" ComponentId="{CB36BD24-962C-474D-A263-47D4117EE287}" Directory_="APPDIR" Attributes="0" KeyPath="SaveDocToDB.dll" FullKeyPath="APPDIR\SaveDocToDB.dll"/>
+    <ROW Component="aximdot.txt" ComponentId="{C5A340B4-21C9-4369-ADFF-4687C51F6B0A}" Directory_="APPDIR" Attributes="0" KeyPath="aximdot.txt" FullKeyPath="APPDIR"/>
+    <ROW Component="setup.exe" ComponentId="{76804837-A39F-4289-A214-8C39F5BE1C5E}" Directory_="DISK1_DIR" Attributes="0" KeyPath="setup.exe" FullKeyPath="APPDIR\SaveDocToDB\Express\SingleImage\DiskImages\DISK1\setup.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="aximdot.txt Entries IsIcoRes.Exe setup.exe PM.txt PM.htm SaveDocToDB.dll"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AM.htm" Component_="PM.htm" FileName="10-27-~2.htm|10-27-2006 08-32-43 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 08-32-43 AM.htm" SelfReg="false" Sequence="73"/>
+    <ROW File="AM.htm_1" Component_="PM.htm" FileName="10-27-~3.htm|10-27-2006 09-11-44 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 09-11-44 AM.htm" SelfReg="false" Sequence="74"/>
+    <ROW File="AM.htm_2" Component_="PM.htm" FileName="10-27-~4.htm|10-27-2006 09-11-53 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 09-11-53 AM.htm" SelfReg="false" Sequence="75"/>
+    <ROW File="AM.htm_3" Component_="PM.htm" FileName="10-27-~5.htm|10-27-2006 09-50-33 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 09-50-33 AM.htm" SelfReg="false" Sequence="76"/>
+    <ROW File="AM.htm_4" Component_="PM.htm" FileName="10-27-~6.htm|10-27-2006 09-58-02 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 09-58-02 AM.htm" SelfReg="false" Sequence="77"/>
+    <ROW File="AM.htm_5" Component_="PM.htm" FileName="10-27-~7.htm|10-27-2006 09-58-11 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 09-58-11 AM.htm" SelfReg="false" Sequence="78"/>
+    <ROW File="AM.htm_6" Component_="PM.htm" FileName="10-27-~8.htm|10-27-2006 09-59-33 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 09-59-33 AM.htm" SelfReg="false" Sequence="79"/>
+    <ROW File="AM.htm_7" Component_="PM.htm" FileName="10-27-~9.htm|10-27-2006 09-59-41 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 09-59-41 AM.htm" SelfReg="false" Sequence="80"/>
+    <ROW File="AM.htm_8" Component_="PM.htm" FileName="10-30-~1.htm|10-30-2006 11-17-42 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-30-2006 11-17-42 AM.htm" SelfReg="false" Sequence="81"/>
+    <ROW File="AM.htm_9" Component_="PM.htm" FileName="10-30-~2.htm|10-30-2006 11-17-55 AM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-30-2006 11-17-55 AM.htm" SelfReg="false" Sequence="82"/>
+    <ROW File="AM.txt" Component_="PM.txt" FileName="10-27-~2.txt|10-27-2006 08-32-32 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 08-32-32 AM.txt" SelfReg="false" Sequence="47"/>
+    <ROW File="AM.txt_1" Component_="PM.txt" FileName="10-27-~3.txt|10-27-2006 09-11-39 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 09-11-39 AM.txt" SelfReg="false" Sequence="48"/>
+    <ROW File="AM.txt_10" Component_="PM.txt" FileName="10-30-~3.txt|10-30-2006 11-17-49 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-30-2006 11-17-49 AM.txt" SelfReg="false" Sequence="57"/>
+    <ROW File="AM.txt_2" Component_="PM.txt" FileName="10-27-~4.txt|10-27-2006 09-11-49 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 09-11-49 AM.txt" SelfReg="false" Sequence="49"/>
+    <ROW File="AM.txt_3" Component_="PM.txt" FileName="10-27-~5.txt|10-27-2006 09-50-28 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 09-50-28 AM.txt" SelfReg="false" Sequence="50"/>
+    <ROW File="AM.txt_4" Component_="PM.txt" FileName="10-27-~6.txt|10-27-2006 09-57-57 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 09-57-57 AM.txt" SelfReg="false" Sequence="51"/>
+    <ROW File="AM.txt_5" Component_="PM.txt" FileName="10-27-~7.txt|10-27-2006 09-58-07 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 09-58-07 AM.txt" SelfReg="false" Sequence="52"/>
+    <ROW File="AM.txt_6" Component_="PM.txt" FileName="10-27-~8.txt|10-27-2006 09-59-28 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 09-59-28 AM.txt" SelfReg="false" Sequence="53"/>
+    <ROW File="AM.txt_7" Component_="PM.txt" FileName="10-27-~9.txt|10-27-2006 09-59-37 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 09-59-37 AM.txt" SelfReg="false" Sequence="54"/>
+    <ROW File="AM.txt_8" Component_="PM.txt" FileName="10-30-~1.txt|10-30-2006 09-54-04 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-30-2006 09-54-04 AM.txt" SelfReg="false" Sequence="55"/>
+    <ROW File="AM.txt_9" Component_="PM.txt" FileName="10-30-~2.txt|10-30-2006 11-17-32 AM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-30-2006 11-17-32 AM.txt" SelfReg="false" Sequence="56"/>
+    <ROW File="DllForm.dfm" Component_="aximdot.txt" FileName="DllForm.dfm" Attributes="0" SourcePath="DllForm.dfm" SelfReg="false" Sequence="7"/>
+    <ROW File="DllForm.pas" Component_="aximdot.txt" FileName="DllForm.pas" Attributes="0" SourcePath="DllForm.pas" SelfReg="false" Sequence="8"/>
+    <ROW File="Entries" Component_="Entries" FileName="Entries" Attributes="0" SourcePath="CVS\Entries" SelfReg="false" Sequence="2"/>
+    <ROW File="Entries.Extra" Component_="Entries" FileName="Entrie~1.Ext|Entries.Extra" Attributes="0" SourcePath="CVS\Entries.Extra" SelfReg="false" Sequence="4"/>
+    <ROW File="Entries.bak" Component_="Entries" FileName="Entries.bak" Attributes="0" SourcePath="CVS\Entries.bak" SelfReg="false" Sequence="3"/>
+    <ROW File="IsIcoRes.Exe" Component_="IsIcoRes.Exe" FileName="_IsIco~1.Exe|_IsIcoRes.Exe" Attributes="0" SourcePath="SaveDocToDB\Express\Interm\_IsIcoRes.Exe" SelfReg="false" Sequence="36"/>
+    <ROW File="MatterSearch._ddp" Component_="aximdot.txt" FileName="Matter~1.~dd|MatterSearch.~ddp" Attributes="0" SourcePath="MatterSearch.~ddp" SelfReg="false" Sequence="15"/>
+    <ROW File="MatterSearch._dfm" Component_="aximdot.txt" FileName="Matter~1.~df|MatterSearch.~dfm" Attributes="0" SourcePath="MatterSearch.~dfm" SelfReg="false" Sequence="16"/>
+    <ROW File="MatterSearch._pas" Component_="aximdot.txt" FileName="Matter~1.~pa|MatterSearch.~pas" Attributes="0" SourcePath="MatterSearch.~pas" SelfReg="false" Sequence="17"/>
+    <ROW File="MatterSearch.dcu" Component_="aximdot.txt" FileName="Matter~1.dcu|MatterSearch.dcu" Attributes="0" SourcePath="MatterSearch.dcu" SelfReg="false" Sequence="11"/>
+    <ROW File="MatterSearch.ddp" Component_="aximdot.txt" FileName="Matter~1.ddp|MatterSearch.ddp" Attributes="0" SourcePath="MatterSearch.ddp" SelfReg="false" Sequence="12"/>
+    <ROW File="MatterSearch.dfm" Component_="aximdot.txt" FileName="Matter~1.dfm|MatterSearch.dfm" Attributes="0" SourcePath="MatterSearch.dfm" SelfReg="false" Sequence="13"/>
+    <ROW File="MatterSearch.pas" Component_="aximdot.txt" FileName="Matter~1.pas|MatterSearch.pas" Attributes="0" SourcePath="MatterSearch.pas" SelfReg="false" Sequence="14"/>
+    <ROW File="PM.htm" Component_="PM.htm" FileName="10-26-~1.htm|10-26-2006 01-52-56 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-26-2006 01-52-56 PM.htm" SelfReg="false" Sequence="64"/>
+    <ROW File="PM.htm_1" Component_="PM.htm" FileName="10-26-~2.htm|10-26-2006 05-08-50 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-26-2006 05-08-50 PM.htm" SelfReg="false" Sequence="65"/>
+    <ROW File="PM.htm_10" Component_="PM.htm" FileName="11-1-2~2.htm|11-1-2006 03-04-17 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\11-1-2006 03-04-17 PM.htm" SelfReg="false" Sequence="84"/>
+    <ROW File="PM.htm_11" Component_="PM.htm" FileName="11-10-~1.htm|11-10-2006 01-05-59 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\11-10-2006 01-05-59 PM.htm" SelfReg="false" Sequence="85"/>
+    <ROW File="PM.htm_12" Component_="PM.htm" FileName="11-10-~2.htm|11-10-2006 01-07-13 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\11-10-2006 01-07-13 PM.htm" SelfReg="false" Sequence="86"/>
+    <ROW File="PM.htm_13" Component_="PM.htm" FileName="11-10-~3.htm|11-10-2006 01-07-34 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\11-10-2006 01-07-34 PM.htm" SelfReg="false" Sequence="87"/>
+    <ROW File="PM.htm_14" Component_="PM.htm" FileName="11-14-~1.htm|11-14-2006 12-36-45 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\11-14-2006 12-36-45 PM.htm" SelfReg="false" Sequence="88"/>
+    <ROW File="PM.htm_2" Component_="PM.htm" FileName="10-26-~3.htm|10-26-2006 05-15-06 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-26-2006 05-15-06 PM.htm" SelfReg="false" Sequence="66"/>
+    <ROW File="PM.htm_3" Component_="PM.htm" FileName="10-26-~4.htm|10-26-2006 12-15-45 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-26-2006 12-15-45 PM.htm" SelfReg="false" Sequence="67"/>
+    <ROW File="PM.htm_4" Component_="PM.htm" FileName="10-26-~5.htm|10-26-2006 12-16-06 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-26-2006 12-16-06 PM.htm" SelfReg="false" Sequence="68"/>
+    <ROW File="PM.htm_5" Component_="PM.htm" FileName="10-26-~6.htm|10-26-2006 12-17-27 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-26-2006 12-17-27 PM.htm" SelfReg="false" Sequence="69"/>
+    <ROW File="PM.htm_6" Component_="PM.htm" FileName="10-26-~7.htm|10-26-2006 12-19-23 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-26-2006 12-19-23 PM.htm" SelfReg="false" Sequence="70"/>
+    <ROW File="PM.htm_7" Component_="PM.htm" FileName="10-26-~8.htm|10-26-2006 12-20-48 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-26-2006 12-20-48 PM.htm" SelfReg="false" Sequence="71"/>
+    <ROW File="PM.htm_8" Component_="PM.htm" FileName="10-27-~1.htm|10-27-2006 04-34-18 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\10-27-2006 04-34-18 PM.htm" SelfReg="false" Sequence="72"/>
+    <ROW File="PM.htm_9" Component_="PM.htm" FileName="11-1-2~1.htm|11-1-2006 03-04-07 PM.htm" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\Reports\11-1-2006 03-04-07 PM.htm" SelfReg="false" Sequence="83"/>
+    <ROW File="PM.txt" Component_="PM.txt" FileName="10-26-~1.txt|10-26-2006 01-52-41 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-26-2006 01-52-41 PM.txt" SelfReg="false" Sequence="38"/>
+    <ROW File="PM.txt_1" Component_="PM.txt" FileName="10-26-~2.txt|10-26-2006 05-08-41 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-26-2006 05-08-41 PM.txt" SelfReg="false" Sequence="39"/>
+    <ROW File="PM.txt_10" Component_="PM.txt" FileName="11-1-2~2.txt|11-1-2006 03-04-12 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\11-1-2006 03-04-12 PM.txt" SelfReg="false" Sequence="59"/>
+    <ROW File="PM.txt_11" Component_="PM.txt" FileName="11-10-~1.txt|11-10-2006 01-05-50 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\11-10-2006 01-05-50 PM.txt" SelfReg="false" Sequence="60"/>
+    <ROW File="PM.txt_12" Component_="PM.txt" FileName="11-10-~2.txt|11-10-2006 01-07-09 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\11-10-2006 01-07-09 PM.txt" SelfReg="false" Sequence="61"/>
+    <ROW File="PM.txt_13" Component_="PM.txt" FileName="11-10-~3.txt|11-10-2006 01-07-29 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\11-10-2006 01-07-29 PM.txt" SelfReg="false" Sequence="62"/>
+    <ROW File="PM.txt_14" Component_="PM.txt" FileName="11-14-~1.txt|11-14-2006 12-36-34 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\11-14-2006 12-36-34 PM.txt" SelfReg="false" Sequence="63"/>
+    <ROW File="PM.txt_2" Component_="PM.txt" FileName="10-26-~3.txt|10-26-2006 05-15-01 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-26-2006 05-15-01 PM.txt" SelfReg="false" Sequence="40"/>
+    <ROW File="PM.txt_3" Component_="PM.txt" FileName="10-26-~4.txt|10-26-2006 12-15-28 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-26-2006 12-15-28 PM.txt" SelfReg="false" Sequence="41"/>
+    <ROW File="PM.txt_4" Component_="PM.txt" FileName="10-26-~5.txt|10-26-2006 12-15-56 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-26-2006 12-15-56 PM.txt" SelfReg="false" Sequence="42"/>
+    <ROW File="PM.txt_5" Component_="PM.txt" FileName="10-26-~6.txt|10-26-2006 12-17-17 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-26-2006 12-17-17 PM.txt" SelfReg="false" Sequence="43"/>
+    <ROW File="PM.txt_6" Component_="PM.txt" FileName="10-26-~7.txt|10-26-2006 12-19-15 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-26-2006 12-19-15 PM.txt" SelfReg="false" Sequence="44"/>
+    <ROW File="PM.txt_7" Component_="PM.txt" FileName="10-26-~8.txt|10-26-2006 12-20-43 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-26-2006 12-20-43 PM.txt" SelfReg="false" Sequence="45"/>
+    <ROW File="PM.txt_8" Component_="PM.txt" FileName="10-27-~1.txt|10-27-2006 04-34-08 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\10-27-2006 04-34-08 PM.txt" SelfReg="false" Sequence="46"/>
+    <ROW File="PM.txt_9" Component_="PM.txt" FileName="11-1-2~1.txt|11-1-2006 03-03-57 PM.txt" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\LogFiles\11-1-2006 03-03-57 PM.txt" SelfReg="false" Sequence="58"/>
+    <ROW File="Repository" Component_="Entries" FileName="Reposi~1|Repository" Attributes="0" SourcePath="CVS\Repository" SelfReg="false" Sequence="5"/>
+    <ROW File="Root" Component_="Entries" FileName="Root" Attributes="0" SourcePath="CVS\Root" SelfReg="false" Sequence="6"/>
+    <ROW File="SaveDoc._ddp" Component_="aximdot.txt" FileName="SaveDo~1.~dd|SaveDoc.~ddp" Attributes="0" SourcePath="SaveDoc.~ddp" SelfReg="false" Sequence="23"/>
+    <ROW File="SaveDoc._dfm" Component_="aximdot.txt" FileName="SaveDo~1.~df|SaveDoc.~dfm" Attributes="0" SourcePath="SaveDoc.~dfm" SelfReg="false" Sequence="24"/>
+    <ROW File="SaveDoc._pas" Component_="aximdot.txt" FileName="SaveDo~1.~pa|SaveDoc.~pas" Attributes="0" SourcePath="SaveDoc.~pas" SelfReg="false" Sequence="25"/>
+    <ROW File="SaveDoc.dcu" Component_="aximdot.txt" FileName="SaveDoc.dcu" Attributes="0" SourcePath="SaveDoc.dcu" SelfReg="false" Sequence="19"/>
+    <ROW File="SaveDoc.ddp" Component_="aximdot.txt" FileName="SaveDoc.ddp" Attributes="0" SourcePath="SaveDoc.ddp" SelfReg="false" Sequence="20"/>
+    <ROW File="SaveDoc.dfm" Component_="aximdot.txt" FileName="SaveDoc.dfm" Attributes="0" SourcePath="SaveDoc.dfm" SelfReg="false" Sequence="21"/>
+    <ROW File="SaveDoc.pas" Component_="aximdot.txt" FileName="SaveDoc.pas" Attributes="0" SourcePath="SaveDoc.pas" SelfReg="false" Sequence="22"/>
+    <ROW File="SaveDocFunc._pas" Component_="aximdot.txt" FileName="SaveDo~3.~pa|SaveDocFunc.~pas" Attributes="0" SourcePath="SaveDocFunc.~pas" SelfReg="false" Sequence="35"/>
+    <ROW File="SaveDocFunc.dcu" Component_="aximdot.txt" FileName="SaveDo~2.dcu|SaveDocFunc.dcu" Attributes="0" SourcePath="SaveDocFunc.dcu" SelfReg="false" Sequence="33"/>
+    <ROW File="SaveDocFunc.pas" Component_="aximdot.txt" FileName="SaveDo~2.pas|SaveDocFunc.pas" Attributes="0" SourcePath="SaveDocFunc.pas" SelfReg="false" Sequence="34"/>
+    <ROW File="SaveDocToDB._dpr" Component_="aximdot.txt" FileName="SaveDo~1.~dp|SaveDocToDB.~dpr" Attributes="0" SourcePath="SaveDocToDB.~dpr" SelfReg="false" Sequence="97"/>
+    <ROW File="SaveDocToDB._dsk" Component_="aximdot.txt" FileName="SaveDo~1.~ds|SaveDocToDB.~dsk" Attributes="0" SourcePath="SaveDocToDB.~dsk" SelfReg="false" Sequence="98"/>
+    <ROW File="SaveDocToDB.cfg" Component_="aximdot.txt" FileName="SaveDo~1.cfg|SaveDocToDB.cfg" Attributes="0" SourcePath="SaveDocToDB.cfg" SelfReg="false" Sequence="89"/>
+    <ROW File="SaveDocToDB.dll" Component_="SaveDocToDB.dll" FileName="SaveDo~1.dll|SaveDocToDB.dll" Attributes="0" SourcePath="SaveDocToDB.dll" SelfReg="false" Sequence="90"/>
+    <ROW File="SaveDocToDB.dof" Component_="aximdot.txt" FileName="SaveDo~1.dof|SaveDocToDB.dof" Attributes="0" SourcePath="SaveDocToDB.dof" SelfReg="false" Sequence="91"/>
+    <ROW File="SaveDocToDB.dpr" Component_="aximdot.txt" FileName="SaveDo~1.dpr|SaveDocToDB.dpr" Attributes="0" SourcePath="SaveDocToDB.dpr" SelfReg="false" Sequence="92"/>
+    <ROW File="SaveDocToDB.dsk" Component_="aximdot.txt" FileName="SaveDo~1.dsk|SaveDocToDB.dsk" Attributes="0" SourcePath="SaveDocToDB.dsk" SelfReg="false" Sequence="93"/>
+    <ROW File="SaveDocToDB.ise" Component_="aximdot.txt" FileName="SaveDo~1.ise|SaveDocToDB.ise" Attributes="0" SourcePath="SaveDocToDB.ise" SelfReg="false" Sequence="94"/>
+    <ROW File="SaveDocToDB.ism" Component_="aximdot.txt" FileName="SaveDo~1.ism|SaveDocToDB.ism" Attributes="0" SourcePath="SaveDocToDB.ism" SelfReg="false" Sequence="95"/>
+    <ROW File="SaveDocToDB.ism.749" Component_="aximdot.txt" FileName="SaveDo~1.749|SaveDocToDB.ism.749" Attributes="0" SourcePath="SaveDocToDB.ism.749" SelfReg="false" Sequence="96"/>
+    <ROW File="SavedocDetails._ddp" Component_="aximdot.txt" FileName="Savedo~2.~dd|SavedocDetails.~ddp" Attributes="0" SourcePath="SavedocDetails.~ddp" SelfReg="false" Sequence="30"/>
+    <ROW File="SavedocDetails._dfm" Component_="aximdot.txt" FileName="Savedo~2.~df|SavedocDetails.~dfm" Attributes="0" SourcePath="SavedocDetails.~dfm" SelfReg="false" Sequence="31"/>
+    <ROW File="SavedocDetails._pas" Component_="aximdot.txt" FileName="Savedo~2.~pa|SavedocDetails.~pas" Attributes="0" SourcePath="SavedocDetails.~pas" SelfReg="false" Sequence="32"/>
+    <ROW File="SavedocDetails.dcu" Component_="aximdot.txt" FileName="Savedo~1.dcu|SavedocDetails.dcu" Attributes="0" SourcePath="SavedocDetails.dcu" SelfReg="false" Sequence="26"/>
+    <ROW File="SavedocDetails.ddp" Component_="aximdot.txt" FileName="Savedo~1.ddp|SavedocDetails.ddp" Attributes="0" SourcePath="SavedocDetails.ddp" SelfReg="false" Sequence="27"/>
+    <ROW File="SavedocDetails.dfm" Component_="aximdot.txt" FileName="Savedo~1.dfm|SavedocDetails.dfm" Attributes="0" SourcePath="SavedocDetails.dfm" SelfReg="false" Sequence="28"/>
+    <ROW File="SavedocDetails.pas" Component_="aximdot.txt" FileName="Savedo~1.pas|SavedocDetails.pas" Attributes="0" SourcePath="SavedocDetails.pas" SelfReg="false" Sequence="29"/>
+    <ROW File="aximdot.txt" Component_="aximdot.txt" FileName="aximdot.txt" Attributes="0" SourcePath="aximdot.txt" SelfReg="false" Sequence="1"/>
+    <ROW File="dmSaveDoc.dfm" Component_="aximdot.txt" FileName="dmSave~1.dfm|dmSaveDoc.dfm" Attributes="0" SourcePath="dmSaveDoc.dfm" SelfReg="false" Sequence="9"/>
+    <ROW File="dmSaveDoc.pas" Component_="aximdot.txt" FileName="dmSave~1.pas|dmSaveDoc.pas" Attributes="0" SourcePath="dmSaveDoc.pas" SelfReg="false" Sequence="10"/>
+    <ROW File="readme.txt" Component_="aximdot.txt" FileName="readme.txt" Attributes="0" SourcePath="readme.txt" SelfReg="false" Sequence="18"/>
+    <ROW File="setup.exe" Component_="setup.exe" FileName="setup.exe" Attributes="0" SourcePath="SaveDocToDB\Express\SingleImage\DiskImages\DISK1\setup.exe" SelfReg="false" Sequence="37"/>
+    <ROW File="sqlnet.log" Component_="aximdot.txt" FileName="sqlnet.log" Attributes="0" SourcePath="sqlnet.log" SelfReg="false" Sequence="99"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;ui.ail&gt;"/>
+    <ROW Path="&lt;ui_en.ail&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="FolderDlg.aip" Path="&lt;FolderDlg.aip&gt;"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;StaticUIStrings.aip&gt;"/>
+    <ROW Fragment="UI.aip" Path="&lt;UI.aip&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="default_banner.bmp" SourcePath="&lt;default-banner.bmp&gt;"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;default-dialog.bmp&gt;"/>
+    <ROW Name="launcher.dll" SourcePath="&lt;launcher.dll&gt;"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="1" Source="launcher.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="1" Source="launcher.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1545"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1300"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="FirstMediaSize" value="0"/>
+    <ATTRIBUTE name="FirstMediaSizeUnit" value="0"/>
+    <ATTRIBUTE name="InstallationType" value="0"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="MediaSizeUnit" value="0"/>
+    <ATTRIBUTE name="Package" value="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMax="ProductVersion" Attributes="1025"/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" Attributes="2"/>
+  </COMPONENT>
+</DOCUMENT>

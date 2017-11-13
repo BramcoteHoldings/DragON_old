@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="LoginDetails.pas"/>
+    <File Path="LoginDetails.dfm"/>
+    <File Path="main.pas"/>
+    <File Path="main.dfm"/>
+    <File Path="MatterSearch.pas"/>
+    <File Path="MatterSearch.dfm"/>
+    <File Path="SaveDoc.pas"/>
+    <File Path="SaveDoc.dfm"/>
+    <File Path="SavedocDetails.pas"/>
+    <File Path="SavedocDetails.dfm"/>
+    <File Path="SaveDocFunc.pas"/>
+    <File Path="whatsnew.pas"/>
+    <File Path="whatsnew.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

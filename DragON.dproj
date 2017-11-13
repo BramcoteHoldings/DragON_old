@@ -1,0 +1,195 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{390DF1F3-348A-4E71-B146-1DE53654ED41}</ProjectGuid>
+        <MainSource>DragON.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Release</Config>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>14.6</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <VCL_Custom_Styles>&quot;Iceberg Classico|VCLSTYLE|$(PUBLIC)\Documents\RAD Studio\11.0\Styles\IcebergClassico.vsf&quot;</VCL_Custom_Styles>
+        <VerInfo_Locale>3081</VerInfo_Locale>
+        <VerInfo_MajorVer>3</VerInfo_MajorVer>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_S>false</DCC_S>
+        <DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+        <DCC_UnitSearchPath>.\MAPI;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_K>false</DCC_K>
+        <DCC_F>false</DCC_F>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_UsePackage>vcl;rtl;vclx;VclSmp;vclshlctrls;dbrtl;adortl;vcldb;qrpt;bdertl;vcldbx;dsnap;cds;bdecds;teeui;teedb;tee;teeqr;ibxpress;visualclx;visualdbclx;inet;inetdb;nmfast;vclie;dbexpress;dbxcds;indy;dclOffice2k;rRwWebBrowser60;rRwEasyMapi60;rbTCUI106;rbTC106;rbRCL106;rbDIDE106;rbDAD106;rbUSERDesign106;rbUSER106;rbDBDE106;rbBDE106;rbDB106;rbADO106;rbDBE106;rbIBE106;rbIDE106;rbCIDE106;rbRIDE106;rbRAP106;CRControls60;dac60;dacvcl60;odacvcl60;odac60;cxLibraryVCLD6;dxBarD6;dxcomnd6;dxBarDBNavD6;dxBarExtDBItemsD6;dxBarExtItemsD6;dxDockingD6;dxsbD6;cxEditorsVCLD6;dxThemeD6;cxDataD6;cxExtEditorsVCLD6;cxPageControlVCLD6;cxGridVCLD6;cxSchedulerVCLD6;dxNavBarD6;dxmdsd6;Colateral;glComponent;cw_d6;rbODAC;GXOutlook;RxCtl6;RxDB6;RxBDE6;MathewsExtra;ThemeManager6;VirtualTreesD6;XDevice6;XFormat6;PurposesoftD6;addict3_d6;addict3db_d6;xmlrtl;inetdbbde;inetdbxpress;P164_R60;$(DCC_UsePackage)</DCC_UsePackage>
+        <DCC_Define>DIFF_CHARS;$(DCC_Define)</DCC_Define>
+        <VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
+        <DCC_N>true</DCC_N>
+        <DCC_E>false</DCC_E>
+        <VerInfo_Build>39</VerInfo_Build>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Release>1</VerInfo_Release>
+        <VerInfo_Keys>CompanyName=Bramcote Holdings Pty Ltd as Trustee;FileDescription=Saves document in Insight;FileVersion=3.0.1.39;InternalName=;LegalCopyright=Copyright (c) 2010 Bramcote Holdings Pty Ltd as Trustee;LegalTrademarks=Copyright (c) 2010 Bramcote Holdings Pty Ltd as Trustee;OriginalFilename=;ProductName=BHLDocSave;ProductVersion=3.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <VerInfo_AutoGenVersion>false</VerInfo_AutoGenVersion>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Icon_MainIcon>DragON_Icon.ico</Icon_MainIcon>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=3.0.1.39;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <Icon_MainIcon>DragON_Icon.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>false</DCC_DebugInformation>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_Build>41</VerInfo_Build>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Keys>CompanyName=;FileDescription=DragON;FileVersion=3.0.1.41;InternalName=DragON.exe;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=DragON;ProductVersion=3.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_AutoGenVersion>false</VerInfo_AutoGenVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_Optimize>false</DCC_Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_Build>46</VerInfo_Build>
+        <VerInfo_AutoGenVersion>false</VerInfo_AutoGenVersion>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=3.0.1.46;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="main.pas">
+            <Form>frmMain</Form>
+        </DCCReference>
+        <DCCReference Include="LoginDetails.pas">
+            <Form>frmLoginSetup</Form>
+        </DCCReference>
+        <DCCReference Include="MatterSearch.pas">
+            <Form>frmMtrSearch</Form>
+        </DCCReference>
+        <DCCReference Include="SavedocDetails.pas">
+            <Form>frmSaveDocDetails</Form>
+        </DCCReference>
+        <DCCReference Include="SaveDocFunc.pas"/>
+        <DCCReference Include="SaveDoc.pas">
+            <Form>dmSaveDoc</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="whatsnew.pas">
+            <Form>frmWhatsNew</Form>
+        </DCCReference>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">DragON.dpr</Source>
+                </Source>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">True</VersionInfo>
+                    <VersionInfo Name="MajorVer">3</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">1</VersionInfo>
+                    <VersionInfo Name="Build">53</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">3081</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName">Bramcote Holdings Pty Ltd as Trustee</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileDescription">Saves document in Insight</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileVersion">3.0.1.53</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright">Copyright (c) 2010 Bramcote Holdings Pty Ltd as Trustee</VersionInfoKeys>
+                    <VersionInfoKeys Name="LegalTrademarks">Copyright (c) 2010 Bramcote Holdings Pty Ltd as Trustee</VersionInfoKeys>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName">BHLDocSave</VersionInfoKeys>
+                    <VersionInfoKeys Name="ProductVersion">3.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+    <Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+</Project>
+
+<!-- EurekaLog First Line
+[Exception Log]
+EurekaLog Version=7007
+Activate=0
+DeleteMapAfterCompile=1
+Encrypt Password=""
+EurekaLog Last Line -->
