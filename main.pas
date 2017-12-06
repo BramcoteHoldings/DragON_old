@@ -129,9 +129,11 @@ begin
    Self.Activate;
    FURL := False;
    // Extract dropped data.
+//   MessageDlg('about to test dropped data',mtInformation,[mbOk], 0, mbOk);
    if DropComboTarget.Data.Count > 0 then
       FFileList := TStringList.Create;
    try
+//      MessageDlg('total documents being dropped = '+inttostr(DropComboTarget.Data.Count),mtInformation,[mbOk], 0, mbOk);
       for i := 0 to DropComboTarget.Data.Count-1 do
       begin
           Name := DropComboTarget.Data.Names[i];
@@ -145,6 +147,7 @@ begin
              Stream.Free;
           end;
           TempFile := tmpdir + Name;
+//          MessageDlg('filename = '+TempFile,mtInformation,[mbOk], 0, mbOk);
           FFileList.Add(TempFile);
       end;
    finally

@@ -175,7 +175,7 @@ object frmMain: TfrmMain
     DragTypes = [dtCopy, dtLink]
     OnDrop = DropComboTargetDrop
     Target = Owner
-    Formats = [mfFile, mfURL, mfData]
+    Formats = [mfFile, mfURL, mfBitmap, mfMetaFile, mfData]
     Left = 38
     Top = 11
   end
