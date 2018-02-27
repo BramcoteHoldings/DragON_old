@@ -4,13 +4,13 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, cxStyles, cxCustomData, cxGraphics, cxFilter, cxData,
-  cxDataStorage, cxEdit, cxDBData, cxMaskEdit, cxLookAndFeelPainters,
-  StdCtrls, cxButtons, cxContainer, cxTextEdit, LMDCustomControl,
-  LMDCustomPanel, LMDCustomBevelPanel, LMDSimplePanel, cxGridLevel,
-  cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxClasses,
-  cxControls, cxGridCustomView, cxGrid, DBAccess, Menus, cxCheckBox, DB,
-  ExtCtrls, LMDControl, cxLookAndFeels, dxCore, cxNavigator;
+  cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxStyles,
+  cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit, cxNavigator,
+  cxDataControllerConditionalFormattingRulesManagerDialog, Data.DB, cxDBData,
+  cxMaskEdit, cxContainer, Vcl.Menus, Vcl.StdCtrls, cxButtons, cxTextEdit,
+  cxCheckBox, Vcl.ExtCtrls, cxGridLevel, cxGridCustomTableView, cxGridTableView,
+  cxGridDBTableView, cxClasses, cxGridCustomView, cxGrid, dxCore;
+
 
 type
   TfrmMtrSearch = class(TForm)
@@ -32,15 +32,14 @@ type
     vMattersJURISDICTION: TcxGridDBColumn;
     vMattersMATTERSTATUS2: TcxGridDBColumn;
     dbgrMattersLevel1: TcxGridLevel;
-    LMDSimplePanel1: TLMDSimplePanel;
-    Label8: TLabel;
+    tmrSearch: TTimer;
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    cbShowRecentlyAccessed: TcxCheckBox;
     tbClientSearch: TcxTextEdit;
     tbFileSearch: TcxTextEdit;
-    Label31: TLabel;
     btnOk: TcxButton;
-    bnCancel: TcxButton;
-    cbShowRecentlyAccessed: TcxCheckBox;
-    tmrSearch: TTimer;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure vMattersDblClick(Sender: TObject);
     procedure cbShowRecentlyAccessedClick(Sender: TObject);

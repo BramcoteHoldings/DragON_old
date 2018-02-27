@@ -14,12 +14,13 @@ object frmLoginSetup: TfrmLoginSetup
   Font.Name = 'Segoe UI'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   Scaled = False
   OnCreate = FormCreate
   DesignSize = (
     239
     237)
-  PixelsPerInch = 96
+  PixelsPerInch = 106
   TextHeight = 15
   object GroupBox1: TGroupBox
     Left = 7

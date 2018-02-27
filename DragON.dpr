@@ -18,7 +18,7 @@ uses
 
 begin
   Application.Initialize;
-  TStyleManager.TrySetStyle('Sapphire Kamri');
+  TStyleManager.TrySetStyle('Iceberg Classico');
   Application.Title := 'DragON';
   Application.CreateForm(TdmSaveDoc, dmSaveDoc);
   Application.CreateForm(TfrmMain, frmMain);

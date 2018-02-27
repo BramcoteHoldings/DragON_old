@@ -4,24 +4,21 @@ interface
 
 uses
   MapiDefs, Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, cxLabel, cxControls, cxContainer, cxEdit, cxTextEdit, ComObj,
-  cxMaskEdit, cxButtonEdit, cxLookAndFeelPainters, StdCtrls, cxButtons,
-  cxGroupBox, cxRadioGroup, Menus, LMDCustomComponent, LMDBrowseDlg, DB,
-  cxGraphics, cxDropDownEdit, cxLookupEdit, cxDBLookupEdit,
-  cxDBLookupComboBox, cxCheckBox, dbtables, DiffUnit, dxStatusBar,
-  cxMemo, ShellAPI, cxStyles, cxCustomData, cxFilter, cxData,
-  cxDataStorage, cxDBData, cxGridLevel, cxClasses, cxGridCustomView,
-  cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid, cxPC,
-  JvExControls, JvLabel, OleServer, cxLookAndFeels, VCL.uRwMAPISession,
-  uRwEasyMAPI, uRwMapiInterfaces;
+  cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxContainer,
+  cxEdit, Vcl.Menus, cxClasses, cxShellBrowserDialog, uRwEasyMAPI,
+  VCL.uRwMAPISession, cxCheckBox, cxGroupBox, cxRadioGroup, cxMemo,
+  cxDropDownEdit, cxLookupEdit, cxDBLookupEdit, cxDBLookupComboBox, cxTextEdit,
+  dxStatusBar, Vcl.StdCtrls, cxButtons, cxLabel, cxMaskEdit, cxButtonEdit,
+  JvExControls, JvLabel, uRwMapiInterfaces,
+  Dialogs, DB;
 
+ 
 type
   TfrmSaveDocDetails = class(TForm)
     btnEditMatter: TcxButtonEdit;
     lblMatter: TcxLabel;
     btnSave: TcxButton;
     btnClose: TcxButton;
-    BrowseDlg: TLMDBrowseDlg;
     StatusBar: TdxStatusBar;
     cxLabel1: TcxLabel;
     txtDocName: TcxTextEdit;
@@ -41,6 +38,7 @@ type
     lblPath: TJvLabel;
     cbEmailAttachSave: TcxCheckBox;
     MAPISession: TRwMAPISession;
+    BrowseDlg: TcxShellBrowserDialog;
     procedure btnEditMatterPropertiesButtonClick(Sender: TObject;
       AButtonIndex: Integer);
     procedure btnCloseClick(Sender: TObject);
@@ -562,8 +560,8 @@ procedure TfrmSaveDocDetails.btnTxtDocPathPropertiesButtonClick(
 begin
    case AButtonIndex of
       0: begin
-            if BrowseDlg.Execute then
-               lblPath.Caption := BrowseDlg.SelectedFolder; // btnTxtDocPath.Text := BrowseDlg.SelectedFolder;
+            if BrowseDlg.Execute = True then
+               lblPath.Caption := BrowseDlg.Path; // btnTxtDocPath.Text := BrowseDlg.SelectedFolder;
          end;
       1: lblPath.Caption := IncludeTrailingPathDelimiter(SystemString('DRAG_DEFAULT_DIRECTORY'));   // btnTxtDocPath.Text := SystemString('DRAG_DEFAULT_DIRECTORY');
    end;

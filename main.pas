@@ -6,8 +6,7 @@ uses
   DragDrop, DropSource, DropTarget, DragDropFile, ActiveX,
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ExtCtrls, DropComboTarget, Registry, Menus, JvMenus, jpeg, JvGIF,
-  LMDCustomControl, LMDCustomPanel, LMDCustomBevelPanel, LMDSimplePanel,
-  LMDControl;
+  dxGDIPlusClasses;
 
 type
   TfrmMain = class(TForm)
@@ -19,7 +18,6 @@ type
     N1: TMenuItem;
     Version11: TMenuItem;
     Whatsnew1: TMenuItem;
-    LMDSimplePanel1: TLMDSimplePanel;
     Image1: TImage;
     procedure FormCreate(Sender: TObject);
     procedure DropComboTargetDrop(Sender: TObject;

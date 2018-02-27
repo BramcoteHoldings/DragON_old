@@ -48,3 +48,9 @@ Temporary Items
 *.ddp
 __History
 RBackup
+*.dcu
+MAPI\*.dcu
+DragON.exe
+dcu
+*.skincfg
+*.dcu
